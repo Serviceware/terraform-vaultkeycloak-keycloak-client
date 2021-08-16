@@ -11,6 +11,6 @@ variable "vault_client_id" {
 variable "vault_client_secret" {
   type = string
   sensitive = true
-  default = null
+  default = ""
   description = "The secret of the keycloak client that will be used by vault to access the client secrets"
 }
