@@ -11,6 +11,8 @@ resource "keycloak_openid_client" "vault" {
   access_type              = "CONFIDENTIAL"
   service_accounts_enabled = true
 
+  client_secret = var.vault_client_secret
+
 }
 
 data "keycloak_openid_client" "realm_management" {
