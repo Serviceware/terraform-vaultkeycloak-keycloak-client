@@ -1,7 +1,7 @@
 # Terraform Module for Vault Keycloak Terraform Provider
 
 Support module for our [keycloak vault secret backend](https://github.com/Serviceware/vault-plugin-secrets-keycloak) and its [support terraform provider Serviceware/vaultkeycloak](https://registry.terraform.io/providers/Serviceware/vaultkeycloak/latest). 
-It provisions keycloak with the required client id and role so the
+It provisions keycloak with the required client id and role so vault can talk to the this realm and access the client secrets.
 
 ```hcl
 
